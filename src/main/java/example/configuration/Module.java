@@ -10,6 +10,8 @@ import example.repository.AnimalDaoSqlServer;
 
 public class Module extends AbstractModule {
 
+    //bind implementation to interfaces
+    //if class -> no need to bind - Validator
     @Override
     protected void configure() {
         bind(Controller.class).to(ControllerImpl.class);
