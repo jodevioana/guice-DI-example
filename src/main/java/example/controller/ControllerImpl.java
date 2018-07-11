@@ -29,9 +29,4 @@ public class ControllerImpl implements Controller {
         List<Animal> allAnimals = animalDao.getAnimals();
         allAnimals.forEach(animal -> System.out.println(animal.getName() + " - I am speaking!"));
     }
-
-    @Override
-    public Integer methodToTest() {
-        return 3;
-    }
 }
